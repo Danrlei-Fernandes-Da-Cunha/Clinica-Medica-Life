@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans pro', sans-serif;
+}
+
+html, body {
+    /*A Cada 1rem será considerado 10px*/
+    font-size: 62.5%;
+}
+
+/* Seção header */
+
+.section-header {
+    width:100%;
+    height: 12.32em;
+    background-color: #00cad1;
+}
+
+.header-info {
+    max-width: 163.84em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-img img{
+    width: 24em;
+    height: 14.4em;
+    margin: 0 auto;
+}
+
+.header-nav {
+    font-size: 1.5rem;
+}
+
+.header-nav a{
+    margin-right: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 1.0rem;
+}
+
+/* Section Mian */
+
+.section-main {
+    
+}
+/* Section Banner */
+
+.section-banner {
+    width: 100%;
+    height: 76em;
+    color: white;
+    background-image: url(imagens/recepcao.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-info {
+    width: 51.2em;
+    height: 200px;
+    font-size: 2.0rem;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.banner-info h1 {
+    font-weight: 500;
+}
+
+/* Section Sobre */
+
+.section-sobre {
+    text-align: center;
+}
+
+.sobre-info {
+    width: 92.16em;
+    margin: 0 auto;
+}
+
+.sobre-info h2:first-of-type {
+    margin-top: 4.0rem;
+    font-size: 2.0rem;
+}
+
+.sobre-info p:first-of-type {
+    margin-top: 2.0rem;
+    font-size: 1.6rem;
+}
+
+/* Section Lista */
+
+.section-lista {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.section-info {
+    margin: 3.5rem 4.0rem 0 0;
+    text-align: left;
+}
+
+.section-info p {
+    font-size: 2.0rem;
+    margin-bottom: 2.0rem;
+}
+
+.lista-info {
+    margin-left: 4.0rem;
+    font-size: 1.4rem;
+}
+
+/* Section Especialidades */
+
+.section-especialidades h2:first-of-type {
+    margin-top: 2.0rem;
+    font-size: 2.0rem;
+}
+
+.section-especialidades p:first-of-type {
+    margin: 2.0rem;
+    font-size: 1.6rem;
+}
+
+.especialidades-info {
+    width: 92em;
+    margin: 0 auto;
+}
+
+.section-especialidades-img {
+    max-width: 163.84em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.0rem;
+    margin-top: 2.0rem;
+    
+}
+
+.especialidades-img {
+    border-radius: 2.0%;
+    box-shadow: 0.0rem 0.0rem 0.5rem 0.3rem rgb(190, 189, 189);
+}
+.especialidades-img img:first-of-type {
+    width: 46.4em;
+}
+
+.especialidades-img figcaption:first-of-type {
+    margin: 1.0rem;
+    font-size: 1.6rem;
+}
+
+.section-especialidades button:first-of-type {
+    margin: 3.0rem;
+    padding: 1.0rem 2.0rem;
+    background-color: #00cad1;
+    border: 1px solid #00cad1;
+    color: white;
+}
+
+.section-especialidades button:hover {
+    box-shadow: 0.0rem 0.0rem 0.1rem 0.3rem #00cad1;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+/* Section Contato */
+
+.section-contato {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-contato h2:first-of-type{
+    font-size: 2.0rem;
+}
+
+.contato-info {
+    margin: 0 auto;
+    width: 96em;
+}
+
+.contato-info p {
+    margin-bottom: 2.0rem;
+    font-size: 1.6rem;
+}
+
+.contato-info span {
+    font-weight: 700;
+}
+
+.contato-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.contato-endereço {
+    text-align: center;
+}
+
+/* Section Rodape */
+
+.section-rodape {
+    width: 100%;
+    background-color: #0c6e71;
+    margin-top: 5.0rem;
+}
+
+.rodape-info {
+    max-width: 163.84em;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1.0rem;
+}
+
+.rodape-info p {
+    margin-top: 2.0rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.rodape-info a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Media Query */
+
+
+/*Primeira resolução 425px */
+
+@media all and (max-width: 425px) {
+
+}
+
+/* Segunda resolução 768px */
+
+
+
+/* Terceira resolução 1024px */
