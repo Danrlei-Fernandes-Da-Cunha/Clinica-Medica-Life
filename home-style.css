@@ -13,13 +13,13 @@ html, body {
 /* Seção header */
 
 .section-header {
-    width:100%;
+    min-width: 100%;
     height: 12.32em;
     background-color: #00cad1;
 }
 
 .header-info {
-    max-width: 163.84em;
+    max-width: 163.80em;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -28,13 +28,12 @@ html, body {
 }
 
 .header-img img{
-    width: 24em;
-    height: 14.4em;
-    margin: 0 auto;
+    height: 45px;
+    height: 60px;
 }
 
 .header-nav {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
 }
 
 .header-nav a{
@@ -46,11 +45,6 @@ html, body {
 
 /* Section Mian */
 
-.section-main {
-    
-}
-/* Section Banner */
-
 .section-banner {
     width: 100%;
     height: 76em;
@@ -59,18 +53,18 @@ html, body {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 15rem;
+}
+
+.section-banner h1:first-of-type {
+    font-size: 4.0rem;
+    font-weight: 500;
 }
 
 .banner-info {
-    width: 51.2em;
-    height: 200px;
+    max-width: 51.2em;
     font-size: 2.0rem;
     margin: 0 auto;
-    background-color: red;
-}
-
-.banner-info h1 {
-    font-weight: 500;
 }
 
 /* Section Sobre */
@@ -162,7 +156,7 @@ html, body {
     margin: 3.0rem;
     padding: 1.0rem 2.0rem;
     background-color: #00cad1;
-    border: 1px solid #00cad1;
+    border: 0.1rem solid #00cad1;
     color: white;
 }
 
@@ -175,7 +169,7 @@ html, body {
 /* Section Contato */
 
 .section-contato {
-    max-width: 1024px;
+    max-width: 163.84em;
     margin: 0 auto;
     text-align: center;
 }
@@ -204,8 +198,13 @@ html, body {
     font-weight: 700;
 }
 
-.contato-endereço {
+.contato-endereco {
     text-align: center;
+}
+
+.endereco-iframe {
+    max-width: 163.84em;
+    height: 48em;
 }
 
 /* Section Rodape */
@@ -236,15 +235,71 @@ html, body {
 
 /* Media Query */
 
+/*Resolução 425px */
 
-/*Primeira resolução 425px */
+@media (max-width: 425px){
 
-@media all and (max-width: 425px) {
+    /* Section Header */
 
+    .section-header {
+        height: 15em;
+    }
+
+    .header-info {
+        justify-content: center;
+    } *
+
+   /* Section Banner */
+
+   .section-banner {
+    height: 48em;
+    padding-top: 10rem;
+   }
+   .banner-info {
+    width: 21.25em;
+    }
+   .section-banner h1:first-of-type {
+    font-size: 2.5rem;
+    padding-left: 5.0rem;
+   }
+
+   /* Section Contato */
+
+   .contato-info {
+    width: 60em;
+    }
+    .endereco-iframe {
+        width: 64em;
+        height: 24em;
+    }
+    
+    /* Section Sobre*/
+    .sobre-info {
+        width: 65em;
+    }
+    .lista-img {
+        display: none;
+    }
+    .section-info {
+        margin: 0 auto;
+    }
+    .especialidades-info {
+        width: 65em;
+    }
 }
 
-/* Segunda resolução 768px */
+/* Resolução 768px */
+@media (min-width: 768px){
+    /* Section Header */
 
+  .banner-info {
+    width: 38.4em;
+  }
 
+  /* Section Contato */
 
-/* Terceira resolução 1024px */
+  .endereco-iframe {
+    width: 120em;
+    height: 24em;
+    }
+}
